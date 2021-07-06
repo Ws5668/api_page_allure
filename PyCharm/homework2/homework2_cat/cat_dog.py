@@ -44,14 +44,16 @@ class Dog(Animal):
 if __name__ == "__main__":
 
     mao = Cat("猫" , "黑" , 3 , "雄性" , "短毛")
+    mao.run()
     mao.zhuo_mouse()
     mao.jiao()
-    mao.run()
+
 
     gou = Dog("狗" , "黄" , 2 , "雌性" , "长毛")
+    gou.run()
     gou.kan_jia()
     gou.jiao()
-    gou.run()
+
 
 
 
