@@ -19,7 +19,7 @@ class Cat(Animal):
 
 
         super().__init__(name,color,age,gender)
-        self.hair = "短毛"
+        self.hair = hair
 
 
     def zhuo_mouse(self):
@@ -32,7 +32,7 @@ class Dog(Animal):
     def __init__(self,name,color,age,gender,hair):
 
         super().__init__(name,color,age,gender)
-        self.hair = "长毛"
+        self.hair = hair
 
 
     def kan_jia(self):
@@ -41,15 +41,17 @@ class Dog(Animal):
     def jiao(self):
         print(f"这只{self.animal_name}是{self.animal_color}色{self.hair}的，今年{self.animal_age}岁，性别是:{self.animal_gender},并且会汪汪叫。")
 
-if __name__ == "main":
-    print("猫类验证")
-    mao = Cat("猫","黑",3,"雄性","短毛")
+if __name__ == "__main__":
+
+    mao = Cat("猫" , "黑" , 3 , "雄性" , "短毛")
     mao.zhuo_mouse()
     mao.jiao()
-    print("狗类验证")
-    gou = Dog("狗","黄",2,"雌性","长毛")
+    mao.run()
+
+    gou = Dog("狗" , "黄" , 2 , "雌性" , "长毛")
     gou.kan_jia()
     gou.jiao()
+    gou.run()
 
 
 
